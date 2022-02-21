@@ -1,9 +1,45 @@
-.aviso{
-    width: 5rem;
-    height: 3rem;
-    border: 1px solid black;
+.aviso {
+  width: 20rem;
+  height: 9rem;
+  padding: 1rem;
+  background-color: rgb(235, 235, 235);
+  margin: 0.5rem;
+  border-radius: 1.5rem;
 }
 
 .authorName {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
+}
+
+.topoCard {
+  display: flex;
+  justify-content: space-between
+}
+
+.deleteButton {
+  width: 2rem;
+  height: 2rem;
+  color: rgb(221, 0, 0);
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  transition: 0.2s color;
+
+  &:hover {
+    color: rgb(151, 0, 0)
+  }
+}
+
+.editButton {
+  width: 2rem;
+  height: 2rem;
+  color: rgb(66, 66, 241);
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  transition: 0.2s color;
+
+  &:hover {
+    color: rgb(44, 44, 163)
+  }
 }

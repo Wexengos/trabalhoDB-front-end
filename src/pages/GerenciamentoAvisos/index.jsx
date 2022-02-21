@@ -95,8 +95,7 @@ export default function GerenciamentoAvisos() {
         <Modal.Body>
           <div className={styles.formRow}>
             <p>ID do Coordenador: </p>
-            <input
-              className={styles.numberInput}
+            <input className={styles.numberInput}
               {...register("id_coordenador")}
             />
           </div>

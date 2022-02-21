@@ -59,11 +59,12 @@ export default function GerenciamentoUsuarios() {
   return (
     <div className={styles.container}>
       <button className={styles.modalButton} onClick={handleShow}>
-        <ImPlus className={styles.buttonIcon} />
+          <ImPlus className={styles.buttonIcon} />{" "}
+          <p className={styles.buttonText}>Novo usuário</p>
       </button>
       <h1 className={styles.pageTitle}>Usuários cadastrados:</h1>
 
-      <Row className={styles.warnings}>
+      <Row className={styles.users}>
         {usuarios.map((item, index) => {
           return (
             <Col key={index}>

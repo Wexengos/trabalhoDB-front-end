@@ -69,7 +69,7 @@ export default function Aviso({ aviso }) {
         </Modal.Header>
         <Modal.Body>
           <div className={styles.formRow}>
-            <p>ID do Coordenador: </p>
+            <p>ID do coordenador: </p>
             <input
               className={styles.numberInput}
               {...register("id_coordenador")}
@@ -97,11 +97,11 @@ export default function Aviso({ aviso }) {
       <div className={styles.topoCard}>
         <h1 className={styles.authorName}>{aviso.nome}</h1>{" "}
         <div>
-          <button className={styles.deleteButton} onClick={() => deleteAviso()}>
-            <AiFillCloseCircle />
-          </button>
           <button className={styles.editButton} onClick={() => handleShow()}>
             <BsFillPencilFill />
+          </button>
+          <button className={styles.deleteButton} onClick={() => deleteAviso()}>
+            <AiFillCloseCircle />
           </button>
         </div>
       </div>

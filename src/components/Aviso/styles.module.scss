@@ -7,13 +7,13 @@
   border-radius: 1.5rem;
 }
 
-.authorName {
-  font-size: 1.25rem;
-}
-
 .topoCard {
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
+}
+
+.authorName {
+  font-size: 1.25rem;
 }
 
 .deleteButton {
@@ -26,7 +26,7 @@
   transition: 0.2s color;
 
   &:hover {
-    color: rgb(151, 0, 0)
+    color: rgb(151, 0, 0);
   }
 }
 
@@ -40,6 +40,26 @@
   transition: 0.2s color;
 
   &:hover {
-    color: rgb(44, 44, 163)
+    color: rgb(44, 44, 163);
   }
+}
+
+.formRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.numberInput {
+  margin-left: 1rem;
+  width: 2rem;
+  max-height: 2rem;
+}
+
+.textArea {
+  width: 100%;
+  height: 5rem;
+}
+
+.users {
+  width: 90%
 }

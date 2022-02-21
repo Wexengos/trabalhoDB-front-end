@@ -72,28 +72,40 @@ export default function Usuario({ usuario }) {
           </div>
 
           <div>
-              <p>E-mail:</p>
-              <input {...register("email")} />
+            <p>E-mail:</p>
+            <input {...register("email")} />
           </div>
         </Modal.Body>
         <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose} >
-                Cancelar
-            </Button>
-            <Button variant="primary" onClick={handleSubmit(handleEdit)}>
-                Salvar
-            </Button>
+          <Button variant="secondary" onClick={handleClose}>
+            Cancelar
+          </Button>
+          <Button variant="primary" onClick={handleSubmit(handleEdit)}>
+            Salvar
+          </Button>
         </Modal.Footer>
       </Modal>
 
-      <h1>{usuario.nome}</h1>
-      <div>
-        <button className={styles.deleteButton} onClick={() => deleteUsuario()}>
-          <AiFillCloseCircle />
-        </button>
-        <button className={styles.editButton} onClick={() => handleShow()}>
-          <BsFillPencilFill />
-        </button>
+      <div className={styles.picButtonsContainer}>
+        <img
+          className={styles.foto}
+          src="https://www.thispersondoesnotexist.com/image"
+        />
+        <div>
+          <button className={styles.editButton} onClick={() => handleShow()}>
+            <BsFillPencilFill />
+          </button>
+          <button
+            className={styles.deleteButton}
+            onClick={() => deleteUsuario()}
+          >
+            <AiFillCloseCircle />
+          </button>
+        </div>
+      </div>
+
+      <div className={styles.topoCard}>
+        <h1 className={styles.nome}>{usuario.nome}</h1>
       </div>
       <p>{usuario.email}</p>
     </div>
